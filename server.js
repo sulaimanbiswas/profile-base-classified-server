@@ -1,7 +1,6 @@
-const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const colors = require("colors");
-const DBConnect = require("./utils/dbConnect");
+const DBConnect = require("./utils/dbConnect.js");
 
 const app = require("./app");
 
