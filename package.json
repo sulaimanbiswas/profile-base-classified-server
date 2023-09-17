@@ -1,7 +1,7 @@
 {
   "name": "profile-base-classified",
   "version": "1.0.0",
-  "description": "Node Boilerplate",
+  "description": "Profile Base Classified",
   "main": "server.js",
   "scripts": {
     "start": "node server",
