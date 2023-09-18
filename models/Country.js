@@ -1,18 +1,29 @@
 const mongoose = require("mongoose");
 
 const countrySchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: [true, "Country name is required"],
-    unique: true,
-    trim: true,
-  },
-  shortName: {
-    type: String,
-    required: [true, "Country short name is required"],
-    unique: true,
-    trim: true,
-  },
+  id: Number,
+  name: String,
+  iso3: String,
+  iso2: String,
+  numeric_code: String,
+  phone_code: String,
+  capital: String,
+  currency: String,
+  currency_name: String,
+  currency_symbol: String,
+  tld: String,
+  native: String,
+  region: String,
+  region_id: String,
+  subregion: String,
+  subregion_id: String,
+  nationality: String,
+  timezones: String,
+  translations: String,
+  latitude: String,
+  longitude: String,
+  emoji: String,
+  emojiU: String,
 });
 
 const Country = mongoose.model("Country", countrySchema);
