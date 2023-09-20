@@ -2,7 +2,12 @@ const mongoose = require("mongoose");
 
 const countrySchema = new mongoose.Schema({
   id: Number,
-  name: String,
+  name: {
+    type: String,
+    required: [true, "Country name is required"],
+    trim: true,
+    unique: true,
+  },
   iso3: String,
   iso2: String,
   numeric_code: String,

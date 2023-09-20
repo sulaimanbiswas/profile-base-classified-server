@@ -10,6 +10,7 @@ app.use(cors());
 const countryRoute = require("./routes/country.route");
 const stateRoute = require("./routes/state.route.js");
 const cityRoute = require("./routes/city.route.js");
+const ganderRoute = require("./routes/gander.route.js");
 
 app.get("/", (req, res) => {
   res.send("Server is running");
@@ -18,5 +19,6 @@ app.get("/", (req, res) => {
 app.use("/api/v1/country", countryRoute);
 app.use("/api/v1/state", stateRoute);
 app.use("/api/v1/city", cityRoute);
+app.use("/api/v1/gander", ganderRoute);
 
 module.exports = app;
