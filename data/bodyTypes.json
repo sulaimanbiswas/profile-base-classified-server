@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "650a6f592a685a2a54bbebe1"
+  },
+  "name": "prefer not to say",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a6f592a685a2a54bbebe2"
+  },
+  "name": "thin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a6f592a685a2a54bbebe3"
+  },
+  "name": "athletic",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a6f592a685a2a54bbebe4"
+  },
+  "name": "average",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a6f592a685a2a54bbebe5"
+  },
+  "name": "some extra pounds",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a6f592a685a2a54bbebe6"
+  },
+  "name": "big & tall/bbw",
+  "__v": 0
+}]

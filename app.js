@@ -14,6 +14,7 @@ const ganderRoute = require("./routes/gander.route.js");
 const hairColorRoute = require("./routes/hairColor.route.js");
 const eyeColorRoute = require("./routes/eyeColor.route.js");
 const bodyTypeRoute = require("./routes/bodyType.route.js");
+const heightRoute = require("./routes/height.route.js");
 
 app.get("/", (req, res) => {
   res.send("Server is running");
@@ -26,5 +27,6 @@ app.use("/api/v1/gander", ganderRoute);
 app.use("/api/v1/hair-color", hairColorRoute);
 app.use("/api/v1/eye-color", eyeColorRoute);
 app.use("/api/v1/body-type", bodyTypeRoute);
+app.use("/api/v1/height", heightRoute);
 
 module.exports = app;
