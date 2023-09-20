@@ -1,17 +1,17 @@
 const {
-  getHairColorService,
-  createHairColorService,
-} = require("../services/hairColor.services.js");
+  getEyeColorService,
+  createEyeColorService,
+} = require("../services/eyeColor.services.js");
 
-exports.getHairColors = async (req, res) => {
+exports.getEyeColors = async (req, res) => {
   try {
-    const hairColors = await getHairColorService(req.query);
+    const eyeColors = await getEyeColorService(req.query);
 
     res.status(200).json({
       status: "success",
-      result: hairColors.length,
+      result: eyeColors.length,
       data: {
-        hairColors,
+        eyeColors,
       },
     });
   } catch (error) {
@@ -22,14 +22,14 @@ exports.getHairColors = async (req, res) => {
   }
 };
 
-exports.createHairColor = async (req, res) => {
+exports.createEyeColor = async (req, res) => {
   try {
-    const hairColor = await createHairColorService(req.body);
+    const eyeColor = await createEyeColorService(req.body);
 
     res.status(201).json({
       status: "success",
       data: {
-        hairColor,
+        eyeColor,
       },
     });
   } catch (error) {
